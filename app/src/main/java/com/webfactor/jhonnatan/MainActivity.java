@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.webfactor.jhonnatan.dao.ConexionSQLiteHelper;
 import com.webfactor.jhonnatan.dao.UsuarioDAO;
 import com.webfactor.jhonnatan.model.Usuario;
+import com.webfactor.jhonnatan.view.ContainerActivity;
 
 public class MainActivity extends AppCompatActivity {
     EditText txtUsuario , txtPass;
@@ -22,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         txtUsuario=(EditText) findViewById(R.id.lbUsername);
         txtPass=(EditText) findViewById(R.id.lbPassword);
 
-
+        txtUsuario.setText("admin");
+        txtPass.setText("123456");
     }
 
     public void IniciarSesion(View view){
@@ -39,12 +41,18 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Usuario y/o contraseña incorrecto.", Toast.LENGTH_SHORT).show();
             }else{
                 Toast.makeText(this, "Bienvenido. "+pass, Toast.LENGTH_SHORT).show();
+                IrAInicio();
             }
         }
      }
 
     public void IrRegistrarCuenta(View view){
         Intent intent = new Intent(this, MainRegistrarCuenta.class);
+        startActivity(intent);
+    }
+
+    public void IrAInicio(){
+        Intent intent = new Intent(this, ContainerActivity.class);
         startActivity(intent);
     }
 

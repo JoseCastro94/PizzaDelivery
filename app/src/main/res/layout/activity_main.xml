@@ -51,7 +51,7 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/username"
+                        android:id="@+id/lbUsername"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="@string/hint_username" />
@@ -68,10 +68,9 @@
                     app:counterEnabled="true"
                     app:counterMaxLength="30"
                     app:hintTextColor="@color/black"
-                    app:endIconMode="password_toggle"
-                 >
+                    app:endIconMode="password_toggle">
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/password"
+                        android:id="@+id/lbPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPassword"
@@ -83,6 +82,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/text_button_login"
+                    android:onClick="IniciarSesion"
                     app:backgroundTint="@color/red" />
 
                 <RelativeLayout
@@ -104,8 +104,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@id/dontHaveAccount"
+                        android:minHeight="48dp"
+                        android:onClick="IrRegistrarCuenta"
                         android:text="@string/create_here"
-                        android:textColor="@color/editTextColorBlack"
+                        android:textColor="@color/colorPrimaryDark"
                         android:textSize="@dimen/textsize_dontHaveAccount"
                         android:textStyle="bold" />
                 </RelativeLayout>

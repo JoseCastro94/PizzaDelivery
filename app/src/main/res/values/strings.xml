@@ -9,6 +9,6 @@
     <string name="hint_name">Nombre</string>
     <string name="hint_user">Usuario</string>
     <string name="hint_confirm_password">Confirmar Contraseña</string>
-    <string name="text_button_createAccount">ÚNETE</string>
+    <string name="text_button_createAccount">REGISTRARSE</string>
     <string name="toolbar_title_createAccount">Crear Cuenta</string>
 </resources>

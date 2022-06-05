@@ -17,4 +17,8 @@
     <color name="editTextColorBlack">#000000</color>
     <color name="backgroundText_card">#53292929</color>
 
+    <color name="green_dark">#062925</color>
+    <color name="green_normal">#044a42</color>
+    <color name="green_ligth">#3a9188</color>
+    <color name="green_ligth_2">#b8e1dd</color>
 </resources>

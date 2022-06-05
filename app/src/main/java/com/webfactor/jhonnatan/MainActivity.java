@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             if(obj == null){
                 Toast.makeText(this, "Usuario y/o contraseña incorrecto.", Toast.LENGTH_SHORT).show();
             }else{
-                Toast.makeText(this, "Bienvenido. "+pass, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Bienvenido. ", Toast.LENGTH_SHORT).show();
                 IrAInicio();
             }
         }

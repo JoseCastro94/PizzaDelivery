@@ -4,10 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/drawable/ic_add.xml" value="0.1525" />
         <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/drawable/ic_launcher_background.xml" value="0.167" />
+        <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/activity_container.xml" value="0.1" />
         <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/activity_main.xml" value="0.26644736842105265" />
         <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/activity_registrar_cuenta.xml" value="0.25" />
+        <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/bottombar.xml" value="0.25" />
         <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/card_view_pizza.xml" value="0.22" />
+        <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/fragment_home.xml" value="0.18" />
+        <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/fragment_registro_pizza.xml" value="0.10208333333333333" />
+        <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/menu/botton_navigation.xml" value="0.15364583333333334" />
       </map>
     </option>
   </component>

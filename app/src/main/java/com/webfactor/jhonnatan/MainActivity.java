@@ -5,25 +5,43 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.webfactor.jhonnatan.dao.ConexionSQLiteHelper;
+import com.webfactor.jhonnatan.dao.UsuarioDAO;
+import com.webfactor.jhonnatan.model.Usuario;
+
 public class MainActivity extends AppCompatActivity {
-    TextView txtUsuario , txtPass;
+    EditText txtUsuario , txtPass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        txtUsuario= findViewById(R.id.lbUsername);
-        txtPass= findViewById(R.id.lbPassword);
+        txtUsuario=(EditText) findViewById(R.id.lbUsername);
+        txtPass=(EditText) findViewById(R.id.lbPassword);
+
 
     }
 
     public void IniciarSesion(View view){
+        UsuarioDAO dao = new UsuarioDAO(getApplication());
         String user = txtUsuario.getText().toString();
         String pass = txtPass.getText().toString();
-        Toast.makeText(this, "usuario: "+user+", pass: "+pass, Toast.LENGTH_SHORT).show();
-    }
+
+        if(user.length() == 0 || pass.length() == 0){
+            Toast.makeText(this, "Los campos son requeridos."+pass, Toast.LENGTH_SHORT).show();
+        }else{
+            Usuario obj = dao.Consultar(user,pass);
+
+            if(obj == null){
+                Toast.makeText(this, "Usuario y/o contraseña incorrecto.", Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this, "Bienvenido. "+pass, Toast.LENGTH_SHORT).show();
+            }
+        }
+     }
 
     public void IrRegistrarCuenta(View view){
         Intent intent = new Intent(this, MainRegistrarCuenta.class);

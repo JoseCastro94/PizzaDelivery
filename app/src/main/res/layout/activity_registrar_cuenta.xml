@@ -58,7 +58,7 @@
                         app:counterMaxLength="30"
                         app:hintTextColor="@color/black">
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/email"
+                            android:id="@+id/lbRCorreo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/hint_email" />
@@ -79,7 +79,7 @@
                         app:hintTextColor="@color/black">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/name"
+                            android:id="@+id/lbRNombre"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/hint_name" />
@@ -98,7 +98,7 @@
                         app:hintTextColor="@color/black">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/user"
+                            android:id="@+id/lbRUsername"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/hint_user" />
@@ -119,7 +119,7 @@
                         app:hintTextColor="@color/black">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/password_createaccount"
+                            android:id="@+id/lbRPassword"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/hint_password"
@@ -142,7 +142,7 @@
                         app:hintTextColor="@color/black">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/confirmPassword"
+                            android:id="@+id/lbRConfirmarPassword"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/hint_confirm_password"
@@ -155,6 +155,7 @@
                         android:id="@+id/joinUs"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:onClick="RegistrarCuenta"
                         android:text="@string/text_button_createAccount"
                         android:theme="@style/RaisedButtonDark"
                         app:backgroundTint="@color/red" />

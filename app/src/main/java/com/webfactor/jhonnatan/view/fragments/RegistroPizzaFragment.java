@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.webfactor.jhonnatan.R;
+import com.webfactor.jhonnatan.model.Pizza;
 
 public class RegistroPizzaFragment extends Fragment implements View.OnClickListener {
     EditText txtPrecio, txtStock , txtNombre ;
@@ -35,7 +36,12 @@ public class RegistroPizzaFragment extends Fragment implements View.OnClickListe
     }
 
     public void GuardarPizza(){
-       Toast.makeText(getContext(),"OK" ,Toast.LENGTH_SHORT).show();
+        Pizza obj = new Pizza();
+        obj.setNombre(txtNombre.getText().toString());
+        obj.setPrecio(Double.parseDouble(txtPrecio.getText().toString()));
+        obj.setStock(Integer.parseInt(txtStock.getText().toString()));
+        obj.setImagen("https://placeralplato.com/files/2016/05/Pizza-crocante-640x480.jpg");
+       Toast.makeText(getContext(),"Pizza Registrada correctamente!!: "+obj.toString() ,Toast.LENGTH_SHORT).show();
     }
 
     @Override

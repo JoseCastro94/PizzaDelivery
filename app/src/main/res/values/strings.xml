@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Proyecto</string>
+    <string name="app_name">Pizza To Go</string>
     <string name="hint_username">Nombre de Usuario</string>
     <string name="hint_password">Contraseña</string>
     <string name="text_button_login">Login</string>

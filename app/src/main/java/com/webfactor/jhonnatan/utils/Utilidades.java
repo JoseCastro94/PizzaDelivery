@@ -8,5 +8,14 @@ public class Utilidades {
             "username text," +
             "contrasennia text" +
             ")";
+
+    public static final String tabla_Pizza = "create table Pizza(" +
+            "idPizza Integer primary key autoincrement," +
+            "nombre text," +
+            "precio real, " +
+            "stock Integer," +
+            "imagen text" +
+            ")";
     public static final String drop_Usuario = "drop table if exists Usuario";
+    public static final String drop_Pizza = "drop table if exists Pizza";
 }

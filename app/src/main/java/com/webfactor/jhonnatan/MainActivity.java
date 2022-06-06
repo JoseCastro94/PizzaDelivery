@@ -23,8 +23,6 @@ public class MainActivity extends AppCompatActivity {
         txtUsuario=(EditText) findViewById(R.id.lbUsername);
         txtPass=(EditText) findViewById(R.id.lbPassword);
 
-        txtUsuario.setText("admin");
-        txtPass.setText("123456");
     }
 
     public void IniciarSesion(View view){

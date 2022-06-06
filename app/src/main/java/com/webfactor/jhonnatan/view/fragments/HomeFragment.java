@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.webfactor.jhonnatan.R;
 import com.webfactor.jhonnatan.adapter.PizzaAdapterRecyclerView;
+import com.webfactor.jhonnatan.dao.PizzaDAO;
 import com.webfactor.jhonnatan.model.Pizza;
 
 import java.util.ArrayList;
@@ -38,17 +39,8 @@ public class HomeFragment extends Fragment {
         return view;
     }
 
-    public ArrayList<Pizza> buildPictures() {
-        ArrayList<Pizza> pictures = new ArrayList<>();
-
-        pictures.add(new Pizza(1,"https://content.r9cdn.net/rimg/dimg/da/f2/e698eeb7-city-1955-164dcef375f.jpg",
-                "Uriel Ramírez", 12, 3));
-        pictures.add(new Pizza(2,"https://www.eurocasa.com/media/tuscany-tips/5711-A.jpg",
-                "Juan Pablo", 23, 55));
-        pictures.add(new Pizza(3,"http://www.educationquizzes.com/library/KS3-Geography/river-1-1.jpg",
-                "Anahi Salgado",44, 45));
-
-        return pictures;
-
+    public ArrayList<Pizza> buildPictures(){
+        PizzaDAO dao = new PizzaDAO(getContext());
+        return dao.listado();
     }
 }

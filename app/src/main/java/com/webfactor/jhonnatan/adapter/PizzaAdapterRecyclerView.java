@@ -39,9 +39,11 @@ public class PizzaAdapterRecyclerView extends RecyclerView.Adapter<PizzaAdapterR
     @Override
     public void onBindViewHolder(@NonNull PictureViewHolder holder, int position) {
         Pizza picture = pictures.get(position);
-        holder.nombreCard.setText(picture.getNombre());
-        holder.precioCard.setText(""+picture.getPrecio());
-        holder.stockCard.setText(""+picture.getStock());
+        holder.nombreCard.setText("Nombre:"+picture.getNombre());
+        holder.precioCard.setText("Precio:"+picture.getPrecio());
+        holder.stockCard.setText("Stock: "+picture.getStock());
+        holder.codigoCard.setText("Codigo: "+picture.getCodPizza());
+
         Picasso.get().load(picture.getImagen()).into(holder.imagenCard);
     }
 
@@ -56,6 +58,7 @@ public class PizzaAdapterRecyclerView extends RecyclerView.Adapter<PizzaAdapterR
         private TextView nombreCard;
         private TextView precioCard;
         private TextView stockCard;
+        private TextView codigoCard;
 
         public PictureViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -63,6 +66,7 @@ public class PizzaAdapterRecyclerView extends RecyclerView.Adapter<PizzaAdapterR
             nombreCard = (TextView) itemView.findViewById(R.id.nombreCard);
             precioCard = (TextView) itemView.findViewById(R.id.PrecioCard);
             stockCard = (TextView) itemView.findViewById(R.id.StockCard);
+            codigoCard = (TextView) itemView.findViewById(R.id.codigoCard);
         }
     }
 }

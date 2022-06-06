@@ -13,12 +13,13 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.webfactor.jhonnatan.MainActivity;
 import com.webfactor.jhonnatan.R;
 import com.webfactor.jhonnatan.view.fragments.HomeFragment;
+import com.webfactor.jhonnatan.view.fragments.ModificarPizzaFragment;
 import com.webfactor.jhonnatan.view.fragments.RegistroPizzaFragment;
 
 public class ContainerActivity extends AppCompatActivity {
     HomeFragment firstFragment = new HomeFragment();
     RegistroPizzaFragment secondFragment = new RegistroPizzaFragment();
-
+    ModificarPizzaFragment fourFragment = new ModificarPizzaFragment();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +42,9 @@ public class ContainerActivity extends AppCompatActivity {
                     break;
                 case R.id.thirdFragment:
                     Logout();
+                    break;
+                case R.id.fourFragment:
+                    loadFragment(fourFragment);
                     break;
             }
             return false;

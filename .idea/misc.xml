@@ -10,9 +10,10 @@
         <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/activity_main.xml" value="0.26644736842105265" />
         <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/activity_registrar_cuenta.xml" value="0.16296296296296298" />
         <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/bottombar.xml" value="0.25" />
-        <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/card_view_pizza.xml" value="0.22" />
+        <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/card_view_pizza.xml" value="0.5" />
         <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/fragment_home.xml" value="0.18" />
-        <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/fragment_registro_pizza.xml" value="0.25" />
+        <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/fragment_modificar_pizza.xml" value="0.25" />
+        <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/layout/fragment_registro_pizza.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Computer/Desktop/jhonnatan/app/src/main/res/menu/botton_navigation.xml" value="0.15364583333333334" />
       </map>
     </option>

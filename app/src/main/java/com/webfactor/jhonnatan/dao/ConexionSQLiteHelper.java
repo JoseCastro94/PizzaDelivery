@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 import com.webfactor.jhonnatan.utils.Utilidades;
 
 public class ConexionSQLiteHelper extends SQLiteOpenHelper {
-    public static final String base = "bdPizzaDelivery.db";
+    public static final String base = "bdPizza.db";
     public static final int version = 1;
 
     public ConexionSQLiteHelper(@Nullable Context context) {
@@ -19,11 +19,13 @@ public class ConexionSQLiteHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(Utilidades.tabla_Usuario);
+        db.execSQL(Utilidades.tabla_Pizza);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL(Utilidades.drop_Usuario);
+        db.execSQL(Utilidades.drop_Pizza);
         onCreate(db);
     }
 }
